@@ -1,0 +1,146 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel} 
+\usepackage{geometry}
+\geometry{top=0.65in, bottom=0.65in, left=0.8in, right=0.8in}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=*, itemsep=2pt}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{multicol}
+
+\newcommand{\sectionspace}{\vspace{0.18cm}}
+\newcommand{\entryspace}{\vspace{0.14cm}}
+\newcommand{\minispace}{\vspace{0.06cm}}
+
+\titleformat{\section}{\normalsize\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{0.35cm}{0.18cm}
+
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\LARGE Jonathan Sánchez Pesantes} \\[3pt]
+    \large Ingeniero Civil Industrial \\[4pt]
+    \normalsize 
+    +569 6758 5503 \quad $|$ \quad 
+    \href{mailto:jonathan.sanchez.ep@gmail.com}{jonathan.sanchez.ep@gmail.com} \quad $|$ \quad 
+    \href{https://www.linkedin.com/in/jonasanchez}{linkedin.com/in/jonasanchez}
+\end{center}
+\vspace{0.1cm}
+
+% --- RESUMEN ---
+\section*{Resumen Profesional}
+Ingeniero Civil Industrial (U. de Chile) con experiencia en modelamiento predictivo, ingeniería de datos y analítica avanzada. He diseñado sistemas end-to-end de forecasting con ensemble XGBoost/LightGBM/Prophet (SMAPE 22.9\%), identificando $\sim$\$30M CLP/mes en optimización de costos para cliente enterprise. Combino econometría y series de tiempo con Python, R y SQL para construir modelos con impacto cuantificable. Busco roles de Ciencia de Datos o ML Engineering donde el rigor metodológico y el valor de negocio vayan de la mano.
+
+\sectionspace
+
+% --- EXPERIENCIA ---
+\section*{Experiencia Profesional}
+
+\noindent\textbf{Ingeniero en Eficiencias} $|$ ClaroVTR \hfill Marzo 2025~--~Presente \\
+\textit{Subgerencia de Gestión Operacional}
+\begin{itemize}
+    \item \textbf{Modelamiento Predictivo:} Diseño de sistema de predicción de consumo de datos Starlink para 494 líneas de servicio, con ensemble de XGBoost (regresión cuantílica P90), LightGBM y Prophet. SMAPE de 22.9\% validado con cross-validation temporal.
+    \item \textbf{Feature Engineering \& Clustering:} Creación de variables de comportamiento (aceleración de consumo, saturación de plan, cambio abrupto) y segmentación de series temporales con clustering DTW en 8 grupos.
+    \item \textbf{Impacto de Negocio:} Recomendaciones automatizadas de plan por línea de servicio, identificando $\sim$\$30M CLP/mes en ahorro potencial mediante optimización tarifaria.
+    \item \textbf{Ingeniería de Datos:} Pipelines en Python para extracción desde API REST Starlink v2 (OAuth2), SAP y SQL. Dashboards interactivos en HTML/JS y Power BI.
+    \item \textbf{Control de Gestión:} Automatización del reporte PxQ y monitoreo de contratos para validación de facturación a nivel corporativo.
+\end{itemize}
+\entryspace
+
+\noindent\textbf{Analyst -- Customer Success} $|$ Keirón \hfill 2024 \\
+\textit{Área Customer Success}
+\begin{itemize}
+    \item \textbf{Modelo Predictivo de Churn:} Diseño e implementación del \textit{Customer Health Index} (CHI), modelo de scoring multivariable para predicción de riesgo de fuga en segmentos Enterprise.
+    \item \textbf{Analítica de Comportamiento:} Análisis de patrones de uso para detección temprana de clientes en riesgo, integrando señales de adopción y actividad.
+    \item \textbf{Reportería:} Dashboards en Redash para métricas clave de adopción y uso de plataforma.
+\end{itemize}
+\entryspace
+
+\noindent\textbf{Proyecto de Título -- Ingeniería en Planificación} $|$ Agrosuper \hfill 2024 \\
+\textit{Jefatura de Planificación y Operaciones Logísticas}
+\begin{itemize}
+    \item \textbf{Data Quality:} Scripts en Python para limpieza y validación masiva de datos de importaciones, detectando inconsistencias históricas.
+    \item \textbf{Automatización:} Reemplazo de cruces manuales en Excel por conciliación automatizada entre SAP y bases SQL.
+    \item \textbf{Impacto:} Reducción significativa en tiempos de procesamiento y mejora en trazabilidad de inventarios.
+\end{itemize}
+\entryspace
+
+\noindent\textbf{Práctica Profesional -- Analista MIS} $|$ Cencosud Scotiabank \hfill 2023\\
+\textit{Subgerencia Management Information System}
+\begin{itemize}
+    \item Optimización de consultas SQL (Query Tuning) sobre grandes volúmenes de datos financieros.
+    \item Integración de múltiples fuentes mediante procesos ETL para el Panel de Información Institucional.
+    \item Generación de reportes ejecutivos de KPIs para la alta gerencia en Chile y Canadá.
+\end{itemize}
+
+\newpage
+
+% --- FORMACIÓN ---
+\section*{Formación Académica}
+
+\noindent\textbf{Diplomado en Big Data y Ciencia de Datos} $|$ Pontificia Universidad Católica de Chile \hfill 2026 \\
+\textit{Escuela de Ingeniería -- Educación Continua}
+\begin{itemize}
+    \item Diplomado de 296 horas: Infraestructura de Datos, Minería de Datos, Visualización, Programación en R y Aprendizaje de Máquina.
+\end{itemize}
+\entryspace
+
+\noindent\textbf{Gestión y Mejora de Procesos (BPM)} $|$ Universidad Adolfo Ibáñez \hfill 2025
+\begin{itemize}
+    \item Curso de 96 horas. Mejora continua, diseño de KPIs y evaluación de calidad de datos.
+\end{itemize}
+\entryspace
+
+\noindent\textbf{Ingeniero Civil Industrial} $|$ Universidad de Chile \hfill 2019~--~2024 \\
+\textit{Facultad de Ciencias Físicas y Matemáticas}
+\begin{itemize}
+    \item Titulado con distinción máxima. Estudiante Destacado 2023 -- Top $\sim$6\% de la generación.
+\end{itemize}
+
+\sectionspace
+
+% --- PROYECTOS ANALÍTICOS ---
+\section*{Proyectos Analíticos}
+
+\noindent\textbf{Clasificación de Diagnóstico Médico con ML} $|$ Python / scikit-learn \hfill 2024
+\begin{itemize}
+    \item Clasificación binaria (benigno/maligno) sobre dataset Wisconsin (569 registros, 30 variables). Normalización, manejo de desbalance con Under/Over-Sampling. Comparación de SVM, Decision Tree y Naive Bayes con GridSearchCV y cross-validation de 5 folds; evaluación con curva ROC y AUC.
+\end{itemize}
+\entryspace
+
+\noindent\textbf{Modelamiento de Brecha de Género en Ingresos} $|$ U. de Chile \hfill 2023
+\begin{itemize}
+    \item Regresión lineal con efectos fijos sobre $\sim$5.000 comercios para cuantificar brecha salarial. Selección de variables con LASSO y Ridge. Modelos predictivos CART, MARS y KNN; MARS seleccionado por menor error out-of-sample.
+\end{itemize}
+\entryspace
+
+\noindent\textbf{Modelamiento de Elección de Crédito Financiero} $|$ U. de Chile \hfill 2023
+\begin{itemize}
+    \item A/B testing con 4 grupos sobre preferencias de crédito. Modelos Logit binario, Multinomial y Mixed Logit. Modelos ML (Random Forest, SVM, KNN, CART) evaluados con ROC; Random Forest con mejor desempeño predictivo.
+\end{itemize}
+
+\sectionspace
+
+% --- HABILIDADES TÉCNICAS ---
+\section*{Habilidades Técnicas}
+\begin{multicols}{2}
+\begin{itemize}
+    \item \textbf{Lenguajes:} Python (Pandas, NumPy, scikit-learn), R (tidyverse, ggplot2), SQL.
+    \item \textbf{ML \& Forecasting:} XGBoost, LightGBM, Prophet, Random Forest, SVM, LASSO, Ridge, Logit, Exponential Smoothing.
+    \item \textbf{Técnicas:} Regresión cuantílica, clustering DTW, feature engineering, validación cruzada temporal.
+    \item \textbf{Data Engineering:} PySpark, Airflow, DBT, APIs REST (OAuth2).
+    \item \textbf{BI:} Power BI (DAX), Redash.
+    \item \textbf{Infraestructura:} PostgreSQL, SQL Server, SAP, Excel (VBA), Git.
+\end{itemize}
+\end{multicols}
+
+\vspace{-0.15cm}
+\section*{Idiomas}
+\textbf{Español:} Nativo \quad $|$ \quad \textbf{Inglés:} Intermedio (Profesional)
+
+\end{document}

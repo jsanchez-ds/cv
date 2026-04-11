@@ -1,0 +1,124 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{top=0.5in, bottom=0.4in, left=0.55in, right=0.55in}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=0.25in, itemsep=1pt, label=\textbullet}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% --- Harvard-style section: centered, bold, with rule below ---
+\titleformat{\section}{\normalsize\bfseries\centering}{}{0em}{\MakeUppercase}[\vspace{2pt}\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{5pt}
+
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\parindent}{0pt}
+
+% Spacing helpers
+\newcommand{\entryspace}{\vspace{5pt}}
+\newcommand{\subentryspace}{\vspace{2pt}}
+
+\begin{document}
+
+% ===================== HEADER =====================
+\begin{center}
+    {\Large\bfseries Jonathan Sánchez Pesantes} \\[4pt]
+    {\normalsize +569 6758 5503 \enspace\textbullet\enspace \href{mailto:jonathan.sanchez.ep@gmail.com}{jonathan.sanchez.ep@gmail.com} \enspace\textbullet\enspace \href{https://www.linkedin.com/in/jonasanchez}{linkedin.com/in/jonasanchez}}
+\end{center}
+
+% ===================== SUMMARY =====================
+\section*{Resumen Profesional}
+Ingeniero Civil Industrial (U. de Chile, distinción máxima) con foco en modelamiento predictivo, series de tiempo e ingeniería de datos. Experiencia construyendo sistemas de forecasting end-to-end con modelos ensemble y traduciendo resultados analíticos en ahorro operativo cuantificable para clientes enterprise. Base sólida en econometría, machine learning y Python/R/SQL. Busco roles de Ciencia de Datos o ML Engineering donde el rigor metodológico y el impacto de negocio vayan de la mano.
+
+% ===================== EXPERIENCE =====================
+\section*{Experiencia Profesional}
+
+\textbf{ClaroVTR} \hfill Santiago, Chile \\
+\textbf{Ingeniero en Eficiencias} -- Subgerencia de Gestión Operacional \hfill Marzo 2025 -- Presente
+\begin{itemize}
+    \item Diseñé sistema end-to-end de predicción de consumo de datos Starlink para 494 líneas de servicio, con ensemble de XGBoost (regresión cuantílica P90), LightGBM global y Prophet, logrando SMAPE de 22.9\% con validación cruzada temporal.
+    \item Creé variables de comportamiento (aceleración de consumo, saturación de plan, cambio abrupto) y segmenté series temporales mediante clustering DTW en 8 grupos, mejorando SMAPE de 24.5\% a 22.9\%.
+    \item Generé recomendaciones automatizadas de plan por línea de servicio, identificando $\sim$\$30M CLP/mes en ahorro potencial mediante optimización tarifaria con lógica de bolsas de datos.
+    \item Desarrollé pipeline de extracción desde API REST Starlink v2 (OAuth2), integrando datos de SAP y SQL para consolidación analítica.
+    \item Automaticé reporte PxQ y monitoreo de contratos para validación de facturación a nivel corporativo. Construí dashboards en HTML/JS y Power BI.
+\end{itemize}
+
+\entryspace
+
+\textbf{Keirón} \hfill Santiago, Chile \\
+\textbf{Analyst -- Customer Success} \hfill 2024
+\begin{itemize}
+    \item Diseñé e implementé el \textit{Customer Health Index} (CHI), modelo de scoring multivariable para predicción de riesgo de fuga en segmentos Enterprise.
+    \item Analicé patrones de uso para detección temprana de clientes en riesgo, integrando múltiples señales de adopción y actividad.
+    \item Desarrollé dashboards en Redash para métricas clave de adopción y uso de plataforma.
+\end{itemize}
+
+\entryspace
+
+\textbf{Agrosuper} \hfill Santiago, Chile \\
+\textbf{Proyecto de Título -- Ingeniería en Planificación} \hfill 2024
+\begin{itemize}
+    \item Implementé scripts en Python para limpieza y validación masiva de datos de importaciones, detectando inconsistencias históricas en registros de comercio exterior.
+    \item Reemplacé cruces manuales en Excel por procesos automatizados de conciliación entre SAP y bases SQL, reduciendo significativamente tiempos de procesamiento y mejorando trazabilidad de inventarios.
+\end{itemize}
+
+\entryspace
+
+\textbf{Cencosud Scotiabank} \hfill Santiago, Chile \\
+\textbf{Práctica Profesional -- Analista MIS} \hfill 2023
+\begin{itemize}
+    \item Optimicé consultas SQL (Query Tuning) sobre grandes volúmenes de datos financieros e integré múltiples fuentes mediante procesos ETL para el Panel de Información Institucional.
+    \item Generé reportes ejecutivos de KPIs para la alta gerencia en Chile y Canadá.
+\end{itemize}
+
+% ===================== EDUCATION =====================
+\section*{Formación Académica}
+
+\textbf{Pontificia Universidad Católica de Chile} \hfill Santiago, Chile \\
+Diplomado en Big Data y Ciencia de Datos (296 horas) \hfill 2026 \\
+Infraestructura de Datos, Minería de Datos, Visualización, Programación en R y Aprendizaje de Máquina.
+
+\entryspace
+
+\textbf{Universidad Adolfo Ibáñez} \hfill Santiago, Chile \\
+Gestión y Mejora de Procesos -- BPM (96 horas) \hfill 2025 \\
+Mejora continua, diseño de KPIs y evaluación de calidad de datos.
+
+\entryspace
+
+\textbf{Universidad de Chile} \hfill Santiago, Chile \\
+Ingeniero Civil Industrial, Licenciado en Ciencias de la Ingeniería mención Industrial \hfill 2019 -- 2024 \\
+Titulado con distinción máxima. Estudiante Destacado 2023 -- Top $\sim$6\% de la generación.
+
+% ===================== PROJECTS =====================
+\section*{Proyectos Analíticos}
+
+\textbf{Clasificación de Diagnóstico Médico con ML} \hfill 2024 \\
+Clasificación binaria sobre dataset Wisconsin (569 registros, 30 variables). Comparación de SVM, Decision Tree y Naive Bayes con GridSearchCV y cross-validation de 5 folds. Manejo de desbalance con Under/Over-Sampling; evaluación con curva ROC y AUC.
+
+\entryspace
+
+\textbf{Modelamiento de Brecha de Género en Ingresos} -- U. de Chile \hfill 2023 \\
+Regresión con efectos fijos sobre $\sim$5.000 comercios. Selección de variables con LASSO/Ridge. Modelos CART, MARS y KNN; MARS seleccionado por mejor desempeño out-of-sample.
+
+\entryspace
+
+\textbf{Modelamiento de Elección de Crédito Financiero} -- U. de Chile \hfill 2023 \\
+A/B testing (4 grupos) sobre preferencias de crédito. Logit binario, Multinomial y Mixed Logit. Random Forest con mejor desempeño predictivo entre modelos ML evaluados con curva ROC.
+
+% ===================== SKILLS =====================
+\section*{Habilidades Técnicas e Idiomas}
+
+\textbf{Lenguajes:} Python (Pandas, NumPy, scikit-learn), R (tidyverse, ggplot2), SQL \\
+\textbf{ML \& Forecasting:} XGBoost, LightGBM, Prophet, Random Forest, SVM, LASSO, Ridge, Logit, Exponential Smoothing \\
+\textbf{Técnicas:} Regresión cuantílica, clustering DTW, feature engineering, validación cruzada temporal, ensemble por segmento \\
+\textbf{Data Engineering:} PySpark, Apache Airflow, DBT, APIs REST (OAuth2) \\
+\textbf{BI \& Bases de Datos:} Power BI (DAX), Redash, PostgreSQL, SQL Server, SAP, Git \\
+\textbf{Idiomas:} Español (Nativo), Inglés (Intermedio Profesional)
+
+\end{document}
