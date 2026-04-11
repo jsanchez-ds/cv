@@ -36,4 +36,4 @@ pdflatex latex/cv_modern.tex
 
 - 📧 jonathan.sanchez.ep@gmail.com
 - 💼 [linkedin.com/in/jonasanchez](https://www.linkedin.com/in/jonasanchez)
-- 🐙 [github.com/Jonathan742001](https://github.com/Jonathan742001)
+- 🐙 [github.com/jsanchez-ds](https://github.com/jsanchez-ds)
