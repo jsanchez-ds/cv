@@ -35,3 +35,14 @@ pdflatex latex/cv_harvard.tex
 - 📧 jonathan.sanchez.ep@gmail.com
 - 💼 [linkedin.com/in/jonasanchez](https://www.linkedin.com/in/jonasanchez)
 - 🐙 [github.com/jsanchez-ds](https://github.com/jsanchez-ds)
+
+---
+
+## Portfolio
+
+See my data science projects at [github.com/jsanchez-ds](https://github.com/jsanchez-ds):
+
+- [Telecom Quota Forecasting](https://github.com/jsanchez-ds/telecom-quota-forecasting) — XGBoost quantile ensemble for subscriber plan optimization
+- [Bank Marketing Analysis](https://bank-marketing-analysis-jsanchez.streamlit.app/) — Interactive Streamlit demo + RF model (ROC-AUC 0.80)
+- [Credit Choice Experiment](https://jsanchez-ds.github.io/credit-choice-experiment/) — Discrete choice modeling with mixed logit
+- [Gender Income Gap](https://jsanchez-ds.github.io/gender-income-gap/) — Fixed-effects regression + ML on merchant data
