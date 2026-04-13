@@ -28,7 +28,7 @@
 % ===================== HEADER =====================
 \begin{center}
     {\Large\bfseries Jonathan Sánchez Pesantes} \\[4pt]
-    {\normalsize +569 6758 5503 \enspace\textbullet\enspace \href{mailto:jonathan.sanchez.ep@gmail.com}{jonathan.sanchez.ep@gmail.com} \enspace\textbullet\enspace \href{https://www.linkedin.com/in/jonasanchez}{linkedin.com/in/jonasanchez}}
+    {\normalsize +569 6758 5503 \enspace\textbullet\enspace \href{mailto:jonathan.sanchez.ep@gmail.com}{jonathan.sanchez.ep@gmail.com} \enspace\textbullet\enspace \href{https://www.linkedin.com/in/jonasanchez} \enspace\textbullet\enspace \href{https://github.com/jsanchez-ds}{github.com/jsanchez-ds}{linkedin.com/in/jonasanchez}}
 \end{center}
 
 % ===================== SUMMARY =====================
@@ -98,18 +98,23 @@ Titulado con distinción máxima. Estudiante Destacado 2023 -- Top $\sim$6\% de 
 % ===================== PROJECTS =====================
 \section*{Proyectos Analíticos}
 
-\textbf{Clasificación de Diagnóstico Médico con ML} \hfill 2024 \\
-Clasificación binaria sobre dataset Wisconsin (569 registros, 30 variables). Comparación de SVM, Decision Tree y Naive Bayes con GridSearchCV y cross-validation de 5 folds. Manejo de desbalance con Under/Over-Sampling; evaluación con curva ROC y AUC.
+\textbf{\href{https://bank-marketing-analysis-jsanchez.streamlit.app/}{Análisis de Campañas Bancarias}} -- \textit{Demo interactiva en Streamlit} \hfill 2024 \\
+Predicción de suscripción a depósito a plazo (dataset UCI, 45K registros). Random Forest con ROC-AUC 0.80 sobre hold-out (sin \texttt{duration} para evitar data leakage). Diagnóstico y corrección de fuga SMOTE-en-CV.
 
 \entryspace
 
-\textbf{Modelamiento de Brecha de Género en Ingresos} -- U. de Chile \hfill 2023 \\
-Regresión con efectos fijos sobre $\sim$5.000 comercios. Selección de variables con LASSO/Ridge. Modelos CART, MARS y KNN; MARS seleccionado por mejor desempeño out-of-sample.
+\textbf{\href{https://jsanchez-ds.github.io/medical-diagnosis-classification/}{Clasificación de Diagnóstico Médico con ML}} \hfill 2024 \\
+Clasificación benigno/maligno sobre dataset Wisconsin (569 registros, 30 variables). SVM con GridSearchCV alcanza 97.6\% de accuracy y AUC 0.99. Manejo de desbalance con Under/Over-Sampling.
 
 \entryspace
 
-\textbf{Modelamiento de Elección de Crédito Financiero} -- U. de Chile \hfill 2023 \\
-A/B testing (4 grupos) sobre preferencias de crédito. Logit binario, Multinomial y Mixed Logit. Random Forest con mejor desempeño predictivo entre modelos ML evaluados con curva ROC.
+\textbf{\href{https://jsanchez-ds.github.io/gender-income-gap/}{Brecha de Género en Ingresos de Pequeños Comercios}} \hfill 2023 \\
+Regresión con efectos fijos (\texttt{fixest}) sobre $\sim$5.000 comercios. Selección de variables con LASSO/Ridge. MARS seleccionado por menor error out-of-sample.
+
+\entryspace
+
+\textbf{\href{https://jsanchez-ds.github.io/credit-choice-experiment/}{Experimento de Elección de Crédito Financiero}} \hfill 2023 \\
+Discrete choice modeling con 4 condiciones experimentales. Logit condicional, Mixed Logit y comparación ML (RF, SVM, CART, KNN).
 
 % ===================== SKILLS =====================
 \section*{Habilidades Técnicas e Idiomas}
