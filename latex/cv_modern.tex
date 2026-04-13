@@ -28,14 +28,14 @@
     \normalsize 
     +569 6758 5503 \quad $|$ \quad 
     \href{mailto:jonathan.sanchez.ep@gmail.com}{jonathan.sanchez.ep@gmail.com} \quad $|$ \quad 
-    \href{https://www.linkedin.com/in/jonasanchez} \quad $|$ \quad
-    \href{https://github.com/jsanchez-ds}{github.com/jsanchez-ds}{linkedin.com/in/jonasanchez}
+    \href{https://www.linkedin.com/in/jonasanchez}{linkedin.com/in/jonasanchez} \quad $|$ \quad
+    \href{https://github.com/jsanchez-ds}{github.com/jsanchez-ds}
 \end{center}
 \vspace{0.1cm}
 
 % --- RESUMEN ---
 \section*{Resumen Profesional}
-Ingeniero Civil Industrial (U. de Chile) con experiencia en modelamiento predictivo, ingeniería de datos y analítica avanzada. He diseñado sistemas end-to-end de forecasting con ensemble XGBoost/LightGBM/Prophet (SMAPE 22.9\%), identificando $\sim$\$30M CLP/mes en optimización de costos para cliente enterprise. Combino econometría y series de tiempo con Python, R y SQL para construir modelos con impacto cuantificable. Busco roles de Ciencia de Datos o ML Engineering donde el rigor metodológico y el valor de negocio vayan de la mano.
+Ingeniero Civil Industrial (U. de Chile, distinción máxima) con interés en ciencia de datos y modelamiento predictivo. Experiencia en automatización de procesos con Python, control de gestión y desarrollo de modelos de forecasting con machine learning. Manejo de Python, R y SQL. Busco roles de Ciencia de Datos donde pueda seguir desarrollando habilidades en ML aplicado a problemas de negocio.
 
 \sectionspace
 
@@ -45,11 +45,11 @@ Ingeniero Civil Industrial (U. de Chile) con experiencia en modelamiento predict
 \noindent\textbf{Ingeniero en Eficiencias} $|$ ClaroVTR \hfill Marzo 2025~--~Presente \\
 \textit{Subgerencia de Gestión Operacional}
 \begin{itemize}
-    \item \textbf{Modelamiento Predictivo:} Diseño de sistema de predicción de consumo de datos Starlink para 494 líneas de servicio, con ensemble de XGBoost (regresión cuantílica P90), LightGBM y Prophet. SMAPE de 22.9\% validado con cross-validation temporal.
-    \item \textbf{Feature Engineering \& Clustering:} Creación de variables de comportamiento (aceleración de consumo, saturación de plan, cambio abrupto) y segmentación de series temporales con clustering DTW en 8 grupos.
-    \item \textbf{Impacto de Negocio:} Recomendaciones automatizadas de plan por línea de servicio, identificando $\sim$\$30M CLP/mes en ahorro potencial mediante optimización tarifaria.
-    \item \textbf{Ingeniería de Datos:} Pipelines en Python para extracción desde API REST Starlink v2 (OAuth2), SAP y SQL. Dashboards interactivos en HTML/JS y Power BI.
-    \item \textbf{Control de Gestión:} Automatización del reporte PxQ y monitoreo de contratos para validación de facturación a nivel corporativo.
+    \item \textbf{Modelamiento Predictivo:} Diseño de modelo de predicción de consumo de datos (XGBoost + Prophet) para un servicio con $\sim$500 líneas, incluyendo feature engineering y validación temporal.
+    \item \textbf{Automatización:} Automatización de procesos operativos con Python: reportes, extracción de datos desde API REST Starlink (OAuth2), conciliación con SAP y SQL.
+    \item \textbf{Gestión de Eficiencias:} Gestión de iniciativas de eficiencia operacional enfocadas en reducción de costos y optimización tarifaria.
+    \item \textbf{Control de Gestión:} Procesos de control de gestión y validación de facturación a nivel corporativo.
+    \item \textbf{Visualización:} Dashboards en Power BI para seguimiento de KPIs operacionales.
 \end{itemize}
 \entryspace
 
@@ -108,21 +108,27 @@ Ingeniero Civil Industrial (U. de Chile) con experiencia en modelamiento predict
 % --- PROYECTOS ANALÍTICOS ---
 \section*{Proyectos Analíticos}
 
-\noindent\textbf{Clasificación de Diagnóstico Médico con ML} $|$ Python / scikit-learn \hfill 2024
+\noindent\textbf{\href{https://bank-marketing-analysis-jsanchez.streamlit.app/}{Análisis de Campañas Bancarias}} $|$ \textit{Demo interactiva en Streamlit} \hfill 2024
 \begin{itemize}
-    \item Clasificación binaria (benigno/maligno) sobre dataset Wisconsin (569 registros, 30 variables). Normalización, manejo de desbalance con Under/Over-Sampling. Comparación de SVM, Decision Tree y Naive Bayes con GridSearchCV y cross-validation de 5 folds; evaluación con curva ROC y AUC.
+    \item Predicción de suscripción a depósito a plazo (dataset UCI, 45K registros). Random Forest con ROC-AUC 0.80 sobre hold-out (sin \texttt{duration} para evitar data leakage). Diagnóstico y corrección de fuga SMOTE-en-CV.
 \end{itemize}
 \entryspace
 
-\noindent\textbf{Modelamiento de Brecha de Género en Ingresos} $|$ U. de Chile \hfill 2023
+\noindent\textbf{\href{https://jsanchez-ds.github.io/medical-diagnosis-classification/}{Clasificación de Diagnóstico Médico con ML}} $|$ Python / scikit-learn \hfill 2024
 \begin{itemize}
-    \item Regresión lineal con efectos fijos sobre $\sim$5.000 comercios para cuantificar brecha salarial. Selección de variables con LASSO y Ridge. Modelos predictivos CART, MARS y KNN; MARS seleccionado por menor error out-of-sample.
+    \item Clasificación benigno/maligno sobre dataset Wisconsin (569 registros, 30 variables). SVM con GridSearchCV alcanza 97.6\% de accuracy y AUC 0.99. Manejo de desbalance con Under/Over-Sampling.
 \end{itemize}
 \entryspace
 
-\noindent\textbf{Modelamiento de Elección de Crédito Financiero} $|$ U. de Chile \hfill 2023
+\noindent\textbf{\href{https://jsanchez-ds.github.io/gender-income-gap/}{Brecha de Género en Ingresos de Pequeños Comercios}} $|$ U. de Chile \hfill 2023
 \begin{itemize}
-    \item A/B testing con 4 grupos sobre preferencias de crédito. Modelos Logit binario, Multinomial y Mixed Logit. Modelos ML (Random Forest, SVM, KNN, CART) evaluados con ROC; Random Forest con mejor desempeño predictivo.
+    \item Regresión con efectos fijos (\texttt{fixest}) sobre $\sim$5.000 comercios. Selección de variables con LASSO/Ridge. MARS seleccionado por menor error out-of-sample.
+\end{itemize}
+\entryspace
+
+\noindent\textbf{\href{https://jsanchez-ds.github.io/credit-choice-experiment/}{Experimento de Elección de Crédito Financiero}} $|$ U. de Chile \hfill 2023
+\begin{itemize}
+    \item Discrete choice modeling con 4 condiciones experimentales. Logit condicional, Mixed Logit y comparación ML (RF, SVM, CART, KNN).
 \end{itemize}
 
 \sectionspace
@@ -132,11 +138,10 @@ Ingeniero Civil Industrial (U. de Chile) con experiencia en modelamiento predict
 \begin{multicols}{2}
 \begin{itemize}
     \item \textbf{Lenguajes:} Python (Pandas, NumPy, scikit-learn), R (tidyverse, ggplot2), SQL.
-    \item \textbf{ML \& Forecasting:} XGBoost, LightGBM, Prophet, Random Forest, SVM, LASSO, Ridge, Logit, Exponential Smoothing.
-    \item \textbf{Técnicas:} Regresión cuantílica, clustering DTW, feature engineering, validación cruzada temporal.
-    \item \textbf{Data Engineering:} PySpark, Airflow, DBT, APIs REST (OAuth2).
-    \item \textbf{BI:} Power BI (DAX), Redash.
-    \item \textbf{Infraestructura:} PostgreSQL, SQL Server, SAP, Excel (VBA), Git.
+    \item \textbf{ML \& Stats:} XGBoost, Random Forest, SVM, LASSO/Ridge, Logit, Prophet, regresión con efectos fijos.
+    \item \textbf{Técnicas:} Feature engineering, validación cruzada, manejo de desbalance, selección de variables.
+    \item \textbf{Herramientas:} Power BI, PySpark, APIs REST, Git, SAP.
+    \item \textbf{Bases de Datos:} PostgreSQL, SQL Server.
 \end{itemize}
 \end{multicols}
 
